@@ -16,6 +16,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  min-height: calc(100vh - 40px); /* Subtract the total vertical padding/margin of footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .flex-div {
@@ -227,3 +232,45 @@ form .create-account:hover {
     }
   }  
 }
+footer {
+    margin-top: 20px; /* Adjust as needed */
+    padding: 20px 0;
+    font-size: 12px; /* Adjust as needed */
+    text-align: center;
+    background: #f0f2f5;
+    color: #737373; /* Footer text color */
+    border-top: 1px solid #ddd; /* Add a top border or remove if not needed */
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 980px; /* Adjust as needed */
+    margin: auto;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; /* Adjust spacing as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-list li {
+    margin: 0 10px; /* Adjust spacing as needed */
+  }
+  
+  .footer-list li a {
+    text-decoration: none;
+    color: #4267b2; /* Adjust link color as needed */
+  }
+  
+  .footer-meta {
+    margin-top: 10px; /* Adjust as needed */
+    color: #737373; /* Adjust text color as needed */
+  }
+  
